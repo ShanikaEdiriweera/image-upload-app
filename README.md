@@ -1,0 +1,1 @@
+Client Server Application to upload images to server/ S3 bucket.
