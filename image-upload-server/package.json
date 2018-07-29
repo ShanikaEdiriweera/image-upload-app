@@ -1,0 +1,31 @@
+{
+  "name": "image-upload-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rimraf dist/ && babel ./ --out-dir dist/ --ignore ./node_modules,./.babelrc,./package.json,./npm-debug.log --copy-files",
+    "start": "npm run build && node dist/index.js",
+    "start-watch": "npm run build && nodemon dist/index.js"
+  },
+  "author": "ShanikaEdiriweera",
+  "license": "ISC",
+  "dependencies": {
+    "aws-sdk": "^2.279.1",
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.4",
+    "express": "^4.16.3",
+    "express-fileupload": "^0.4.0",
+    "morgan": "^1.9.0",
+    "multer": "^1.3.1",
+    "multer-s3": "^2.7.0",
+    "multiparty": "^4.1.4"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "nodemon": "^1.18.2",
+    "rimraf": "^2.6.2"
+  }
+}
