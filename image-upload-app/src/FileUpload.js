@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import Dropzone from 'react-dropzone'
 
+import './fileUpload.css';
+
 export default class FileUpload extends Component {
 
     constructor(props) {
@@ -73,10 +75,10 @@ export default class FileUpload extends Component {
         
                 <div className="form-group">
                     <input className="form-control" ref={(ref) => { this.fileName = ref; }} type="text" placeholder="Optional name for the file" />
+                    <button className="btn btn-success" type>Upload</button>
                 </div>
         
-                <button className="btn btn-success" type>Upload</button>
-                <img src="https://ideo-images.s3.amazonaws.com/shanka.jpg" alt="img" />
+                <img src="https://ideo-images.s3.amazonaws.com/shanka.jpg" alt="" />
               </form>
           </div>
         )

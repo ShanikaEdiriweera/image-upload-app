@@ -1,0 +1,42 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.dropzone div {
+  border-radius: 10px;
+  padding: 1em;
+  margin: 1em;
+  font-size: 1em;
+}
+
+.container form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-group {
+  margin-top: 1em;
+}
+
+.form-group input[type="file"] {
+  padding: 0.5em 1em;
+  font-size: 1rem;
+}
+
+.form-group input[type="text"] {
+  padding: 0.5em 1em;
+  font-size: 1em;
+}
+
+.form-group button {
+  padding: 0.5em 2em;
+  font-size: 1rem;
+  margin-left: 0.2em;
+  background-color: #7d00b3;
+  color: #ffffff;
+}
